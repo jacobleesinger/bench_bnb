@@ -6,7 +6,7 @@ var Index = require('./components/index');
 
 document.addEventListener("DOMCOntentLoaded", function() {
   ReactDOM.render(
-    <Index />,
+    <Search />,
     document.getElementById('content')
 
   );

@@ -19,8 +19,14 @@ var Index = React.createClass({
     this.setState({
       benches: BenchStore.all()
     });
-  }
+  },
 
+  render: function () {
+    return (
+      <div></div>
+    );
+
+  }
 
 
 });
