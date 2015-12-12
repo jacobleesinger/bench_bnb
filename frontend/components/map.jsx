@@ -9,6 +9,7 @@ var Map = React.createClass({
         zoom: 13
       };
       this.map = new google.maps.Map(map, mapOptions);
+      BenchStore.addListener(this._onChange);
     },
 
   render: function () {
