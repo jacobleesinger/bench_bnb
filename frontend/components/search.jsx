@@ -7,6 +7,7 @@ var Search = React.createClass({
   render: function () {
     return (
       <div>
+        search
         <Map />
         <Index />
       </div>
