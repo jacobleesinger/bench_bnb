@@ -6,12 +6,13 @@ var ApiUtil = {
       url: 'api/benches',
       method: 'get',
       success: function(benches) {
+
         ApiActions.receiveAll(benches);
       }
     });
   }
 };
 
-window.ApiUtil = ApiUtil;
+// window.ApiUtil = ApiUtil;
 
 module.exports = ApiUtil;
