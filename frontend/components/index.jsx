@@ -12,7 +12,7 @@ var Index = React.createClass({
 
   componentDidMount: function() {
     this.benchToken = BenchStore.addListener(this._onChange);
-    ApiUtil.fetchBenches();
+
   },
 
   _onChange: function() {
@@ -25,7 +25,7 @@ var Index = React.createClass({
     return (
       <div>
         {this.state.benches.map(function(bench) {
-          debugger;
+
           return (
             <div key={bench.id}> {bench.description} </div>
             )

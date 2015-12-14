@@ -1,3 +1,3 @@
 json.array! @benches do |bench|
-  json.extend! bench, :description, :lat, :lng
+  json.extract! bench, :id, :description, :lat, :lng
 end

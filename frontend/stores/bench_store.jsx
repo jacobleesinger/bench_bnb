@@ -21,12 +21,14 @@ var resetBenches = function() {
 };
 
 var addAllBenches = function(benches) {
+  
   benches.forEach(function(bench) {
     _benches[bench.id] = bench;
   });
 };
 
 BenchStore.__onDispatch = function(payload) {
+
   switch(payload.actionType) {
     case BenchConstants.BENCHES_RECEIVED:
       resetBenches();
