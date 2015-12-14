@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
 var BenchStore = require('../stores/bench_store');
 
 var Map = React.createClass({
@@ -7,7 +8,7 @@ var Map = React.createClass({
     // debugger;
     var myLatLng = {lat: 37.7758, lng: -122.435};
 
-    var map = React.findDOMNode(this.refs.map);
+    var map = ReactDOM.findDOMNode(this.refs.map);
     var mapOptions = {
       center: {lat: 37.7758, lng: -122.435},
       zoom: 13
@@ -25,7 +26,7 @@ var Map = React.createClass({
   },
 
   componentDidMount: function(){
-      var map = React.findDOMNode(this.refs.map);
+      var map = ReactDOM.findDOMNode(this.refs.map);
       var mapOptions = {
         center: {lat: 37.7758, lng: -122.435},
         zoom: 13
