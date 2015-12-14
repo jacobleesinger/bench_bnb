@@ -31,8 +31,8 @@ BenchStore.__onDispatch = function(payload) {
     case BenchConstants.BENCHES_RECEIVED:
       resetBenches();
       addAllBenches(payload.benches);
-      break;
       BenchStore.__emitChange();
+      break;
   }
 }
 
